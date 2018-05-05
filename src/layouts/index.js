@@ -71,7 +71,7 @@ const TemplateWrapper = props => {
         {children()}
         <Footer>
           &copy; 2018 by Joe Previte. All rights reserved. <br />
-          <a href="https://github.com/LeKoArts/gatsby-starter-minimal-blog">GitHub Repository</a>
+          <a href="https://github.com/jjprevite/portfolio-rebuild">GitHub Repository</a>
         </Footer>;
       </div>
     </ThemeProvider>
