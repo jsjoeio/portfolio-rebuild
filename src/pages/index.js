@@ -40,6 +40,11 @@ const Hero = styled.div`
   }
 `;
 
+const Nav = styled.nav`
+  display: flex;
+  justify-content: space-between;
+`;
+
 const IndexPage = props => {
   const postEdges = props.data.allMarkdownRemark.edges;
 
@@ -47,21 +52,52 @@ const IndexPage = props => {
     <Wrapper>
       <Hero>
         <h1>Hi.</h1>
-        <p>
-          I&apos;m John Doe, a Senior UX Developer with five years of industry experience, specializing in developing
-          React apps with the best UX users can get.
-        </p>
-        <Link to="/contact">
-          <Button big>
-            <svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1764 11q33 24 27 64l-256 1536q-5 29-32 45-14 8-31 8-11 0-24-5l-453-185-242 295q-18 23-49 23-13 0-22-4-19-7-30.5-23.5t-11.5-36.5v-349l864-1059-1069 925-395-162q-37-14-40-55-2-40 32-59l1664-960q15-9 32-9 20 0 36 11z" />
-            </svg>
-            Contact
-          </Button>
-        </Link>
+        <p>I&apos;m Joe Previte, a Frontend Developer with a passion for learning.</p>
+        <Nav>
+          <Link to="/contact">
+            <Button big>
+              <svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1764 11q33 24 27 64l-256 1536q-5 29-32 45-14 8-31 8-11 0-24-5l-453-185-242 295q-18 23-49 23-13 0-22-4-19-7-30.5-23.5t-11.5-36.5v-349l864-1059-1069 925-395-162q-37-14-40-55-2-40 32-59l1664-960q15-9 32-9 20 0 36 11z" />
+              </svg>
+              Portfolio
+            </Button>
+          </Link>
+          <Link to="/contact">
+            <Button big>
+              <svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1764 11q33 24 27 64l-256 1536q-5 29-32 45-14 8-31 8-11 0-24-5l-453-185-242 295q-18 23-49 23-13 0-22-4-19-7-30.5-23.5t-11.5-36.5v-349l864-1059-1069 925-395-162q-37-14-40-55-2-40 32-59l1664-960q15-9 32-9 20 0 36 11z" />
+              </svg>
+              Bookshelf
+            </Button>
+          </Link>
+          <Link to="/contact">
+            <Button big>
+              <svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1764 11q33 24 27 64l-256 1536q-5 29-32 45-14 8-31 8-11 0-24-5l-453-185-242 295q-18 23-49 23-13 0-22-4-19-7-30.5-23.5t-11.5-36.5v-349l864-1059-1069 925-395-162q-37-14-40-55-2-40 32-59l1664-960q15-9 32-9 20 0 36 11z" />
+              </svg>
+              Meditation
+            </Button>
+          </Link>
+          <Link to="/contact">
+            <Button big>
+              <svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1764 11q33 24 27 64l-256 1536q-5 29-32 45-14 8-31 8-11 0-24-5l-453-185-242 295q-18 23-49 23-13 0-22-4-19-7-30.5-23.5t-11.5-36.5v-349l864-1059-1069 925-395-162q-37-14-40-55-2-40 32-59l1664-960q15-9 32-9 20 0 36 11z" />
+              </svg>
+              Music
+            </Button>
+          </Link>
+          <Link to="/contact">
+            <Button big>
+              <svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1764 11q33 24 27 64l-256 1536q-5 29-32 45-14 8-31 8-11 0-24-5l-453-185-242 295q-18 23-49 23-13 0-22-4-19-7-30.5-23.5t-11.5-36.5v-349l864-1059-1069 925-395-162q-37-14-40-55-2-40 32-59l1664-960q15-9 32-9 20 0 36 11z" />
+              </svg>
+              Contact
+            </Button>
+          </Link>
+        </Nav>
       </Hero>
       <Content>
-        <SectionTitle>Latest stories</SectionTitle>
+        <SectionTitle>Latest posts</SectionTitle>
         {postEdges.map(post => (
           <Article
             title={post.node.frontmatter.title}
