@@ -58,25 +58,25 @@ const IndexPage = props => {
         <h1>Hi.</h1>
         <p>I&apos;m Joe Previte, a Frontend Developer with a passion for learning.</p>
         <Nav>
-          <Link to="/contact">
+          <Link to="/portfolio">
             <Button big>
               <Emoji>💼</Emoji>
               Portfolio
             </Button>
           </Link>
-          <Link to="/contact">
+          <Link to="/bookshelf">
             <Button big>
               <Emoji>📚</Emoji>
               Bookshelf
             </Button>
           </Link>
-          <Link to="/contact">
+          <Link to="/meditation">
             <Button big>
               <Emoji>🧘‍♂️</Emoji>
               Meditation
             </Button>
           </Link>
-          <Link to="/contact">
+          <Link to="/beats">
             <Button big>
               <Emoji>🎧</Emoji>
               Beats
