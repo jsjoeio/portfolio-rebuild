@@ -51,7 +51,11 @@ const Beats = () => (
     </Header>
     <Content>
       <h1>Tasty Beats</h1>
-      <p>This will be a page about my Beats.</p>
+      <h3>What exactly are "tasty beats"?</h3>
+      <p>
+        It's a playlist of my top 10 favorite EDM/House songs to which I'm currently vibing. These are the songs I play
+        in the morning to get the day started feeling good.
+      </p>
       <iframe
         title="tasty-beats-playlist"
         src="https://open.spotify.com/embed/user/12140522458/playlist/4XMKibrbtfYeG83SdVD3Ez"
@@ -61,6 +65,22 @@ const Beats = () => (
         allowTransparency="true"
         allow="encrypted-media"
       />
+      <h3>Where does the name come from?</h3>
+      <p>
+        The name is a spin off the term "tasty treats" from a popular web development podcast called{' '}
+        <a href="https://syntax.fm/" rel="noopener noreferrer" target="_blank">
+          Syntax
+        </a>{' '}
+        where they share "treats" related to the web.
+      </p>
+      <h3>I know a few songs you might like! Can I share them with you?</h3>
+      <p>
+        I would love that! 😄 Shoot me a{' '}
+        <a href="https://twitter.com/jjprevite" rel="noopener noreferrer" target="_blank">
+          DM on Twitter
+        </a>{' '}
+        with a a link to the song. 🙏
+      </p>
     </Content>
   </Wrapper>
 );
