@@ -52,6 +52,15 @@ const Beats = () => (
     <Content>
       <h1>Tasty Beats</h1>
       <p>This will be a page about my Beats.</p>
+      <iframe
+        title="tasty-beats-playlist"
+        src="https://open.spotify.com/embed/user/12140522458/playlist/4XMKibrbtfYeG83SdVD3Ez"
+        width="300"
+        height="380"
+        frameBorder="0"
+        allowTransparency="true"
+        allow="encrypted-media"
+      />
     </Content>
   </Wrapper>
 );
