@@ -84,7 +84,7 @@ const IndexPage = props => {
           </Link>
           <Link to="/contact">
             <Button big>
-              <Emoji>📮</Emoji>
+              <Emoji>📨</Emoji>
               Contact
             </Button>
           </Link>
