@@ -50,7 +50,7 @@ const Beats = () => (
       <Link to="/">{config.siteTitle}</Link>
     </Header>
     <Content>
-      <h1>Tasty Beats</h1>
+      <h1>🎧 Tasty Beats</h1>
       <h3>What exactly are "tasty beats"?</h3>
       <p>
         It's a playlist of my top 10 favorite EDM/House songs to which I'm currently vibing. These are the songs I play

@@ -54,7 +54,7 @@ const Meditation = () => (
       <Link to="/">{config.siteTitle}</Link>
     </Header>
     <Content>
-      <h1>Meditation Learning Circle</h1>
+      <h1>🧘‍♂️ Meditation Learning Circle</h1>
       <p>
         I lead a small meditation learning circle, or study group, based on the teachings of the{' '}
         <a href="http://namchak.org/">Namchak lineage</a>. We meet 2x/month over Google Hangout to discuss things

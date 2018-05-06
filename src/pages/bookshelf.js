@@ -50,8 +50,29 @@ const Bookshelf = () => (
       <Link to="/">{config.siteTitle}</Link>
     </Header>
     <Content>
-      <h1>Bookshelf</h1>
-      <p>This will be a page about my Bookshelf.</p>
+      <h1>📚 Bookshelf</h1>
+      <p>
+        The purpose of this page is to share the books on my 'virtual bookshelf'. Here's a short list of books that have
+        changed my life or inspired me in some way:
+      </p>
+      <ul>
+        <li>
+          <h3>The Power of Now</h3>
+          <p>short description</p>
+        </li>
+        <li>
+          <h3>The Power of Now</h3>
+          <p>short description</p>
+        </li>
+        <li>
+          <h3>The Power of Now</h3>
+          <p>short description</p>
+        </li>
+        <li>
+          <h3>The Power of Now</h3>
+          <p>short description</p>
+        </li>
+      </ul>
     </Content>
   </Wrapper>
 );

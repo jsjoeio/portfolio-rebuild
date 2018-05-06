@@ -50,9 +50,15 @@ const Contact = () => (
       <Link to="/">{config.siteTitle}</Link>
     </Header>
     <Content>
-      <h1>Contact</h1>
+      <h1>📨 Contact</h1>
       <p>Want to get in touch? Fill out this form below and say hello 👋🏼</p>
-      <form name="contact-form" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+      <form
+        name="contact-form"
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field
+      "
+      >
         <p>
           <label htmlFor="name">Name</label>
           <input name="name" type="text" required />
