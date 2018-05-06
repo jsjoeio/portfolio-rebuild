@@ -43,6 +43,18 @@ const Content = styled.div`
   }
 `;
 
+const PortfolioList = styled.ul`
+  list-style: none;
+  margin-left: 0;
+`;
+
+const PortfolioItem = styled.li``;
+
+const PortfolioItemImg = styled.img`
+  height: auto;
+  width: 200px;
+`;
+
 const Portfolio = () => (
   <Wrapper>
     <Helmet title={`Portfolio | ${config.siteTitle}`} />
@@ -51,7 +63,30 @@ const Portfolio = () => (
     </Header>
     <Content>
       <h1>💼 Portfolio</h1>
-      <p>This will be a page about my Portfolio.</p>
+      <p>Below, you'll find a list of projects I've worked on recently:</p>
+      <PortfolioList>
+        <PortfolioItem>
+          <PortfolioItemImg
+            alt="screenshot of text message"
+            src="https://camo.githubusercontent.com/7f50ef8e82ba4f7d754e6f765f198c17aa2ded30/68747470733a2f2f692e696d6775722e636f6d2f68436a775031452e706e67"
+          />
+          <h3>Twilio Twitter</h3>
+          <p>a super cool app</p>
+          <Link to="https://github.com/jjprevite/100-days-twilio-twitter">
+            <Button>GitHub Repo</Button>
+          </Link>
+        </PortfolioItem>
+        <PortfolioItem>
+          <h3>Habitica Contribution</h3>
+          <p>a super cool app</p>
+          <Link to="https://medium.freecodecamp.org/i-made-my-first-open-source-contribution-within-200-days-and-how-you-can-too-4d5bdbd63fad">
+            <Button>Read Medium Article</Button>
+          </Link>
+          <Link to="https://github.com/HabitRPG/habitica/pull/8784">
+            <Button>View PR on GitHub</Button>
+          </Link>
+        </PortfolioItem>
+      </PortfolioList>
     </Content>
   </Wrapper>
 );
