@@ -51,18 +51,18 @@ const Contact = () => (
     </Header>
     <Content>
       <h1>Contact</h1>
-      <p>Super cool intro text to get people contacting me! It uses Netlify's form feature.</p>
+      <p>Want to get in touch? Fill out this form below and say hello 👋🏼</p>
       <form name="contact-form" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
         <p>
           <label htmlFor="name">Name</label>
           <input name="name" type="text" required />
         </p>
         <p>
-          <label htmlFor="email">E-Mail</label>
+          <label htmlFor="email">Email</label>
           <input name="email" type="email" required />
         </p>
         <p>
-          <label htmlFor="message">Your Message</label>
+          <label htmlFor="message">Message</label>
           <textarea name="message" required />
         </p>
         <p>
