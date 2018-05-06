@@ -79,7 +79,7 @@ const Beats = () => (
         <a href="https://twitter.com/jjprevite" rel="noopener noreferrer" target="_blank">
           DM on Twitter
         </a>{' '}
-        with a a link to the song. 🙏
+        with a link to the song. 🙏
       </p>
     </Content>
   </Wrapper>
