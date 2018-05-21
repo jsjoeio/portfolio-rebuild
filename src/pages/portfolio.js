@@ -55,6 +55,24 @@ const PortfolioItemImg = styled.img`
   width: 200px;
 `;
 
+const PortfolioItemButtonContainer = styled.div`
+  display: flex;
+
+  a {
+    margin-right: 15px;
+  }
+
+  @media ${media.phone} {
+    flex-wrap: wrap;
+    justify-content: left;
+
+    a {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+`;
+
 const Portfolio = () => (
   <Wrapper>
     <Helmet title={`Portfolio | ${config.siteTitle}`} />
@@ -71,20 +89,28 @@ const Portfolio = () => (
             src="https://camo.githubusercontent.com/7f50ef8e82ba4f7d754e6f765f198c17aa2ded30/68747470733a2f2f692e696d6775722e636f6d2f68436a775031452e706e67"
           />
           <h3>Twilio Twitter</h3>
-          <p>a super cool app</p>
-          <Link to="https://github.com/jjprevite/100-days-twilio-twitter">
-            <Button>GitHub Repo</Button>
-          </Link>
+          <p>
+            An app to help you keep track of your #100DaysOfCode progress. It keeps track of what day you're on, lets
+            you send a text 📱 with what you worked on that day to post to Twitter🐦 and all you have to worry about is
+            coding 🕺🏻💃
+          </p>
+          <PortfolioItemButtonContainer>
+            <a href="https://github.com/jjprevite/100-days-twilio-twitter">
+              <Button>GitHub Repo</Button>
+            </a>
+          </PortfolioItemButtonContainer>
         </PortfolioItem>
         <PortfolioItem>
           <h3>Habitica Contribution</h3>
           <p>a super cool app</p>
-          <Link to="https://medium.freecodecamp.org/i-made-my-first-open-source-contribution-within-200-days-and-how-you-can-too-4d5bdbd63fad">
-            <Button>Read Medium Article</Button>
-          </Link>
-          <Link to="https://github.com/HabitRPG/habitica/pull/8784">
-            <Button>View PR on GitHub</Button>
-          </Link>
+          <PortfolioItemButtonContainer>
+            <a href="https://medium.freecodecamp.org/i-made-my-first-open-source-contribution-within-200-days-and-how-you-can-too-4d5bdbd63fad">
+              <Button>Read on Medium</Button>
+            </a>
+            <a href="https://github.com/HabitRPG/habitica/pull/8784">
+              <Button>View PR on GitHub</Button>
+            </a>
+          </PortfolioItemButtonContainer>
         </PortfolioItem>
       </PortfolioList>
     </Content>
