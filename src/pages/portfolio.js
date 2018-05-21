@@ -52,7 +52,6 @@ const PortfolioItem = styled.li``;
 
 const PortfolioItemImg = styled.img`
   height: auto;
-  width: 200px;
 `;
 
 const PortfolioItemButtonContainer = styled.div`
@@ -87,6 +86,7 @@ const Portfolio = () => (
           <PortfolioItemImg
             alt="screenshot of text message"
             src="https://camo.githubusercontent.com/7f50ef8e82ba4f7d754e6f765f198c17aa2ded30/68747470733a2f2f692e696d6775722e636f6d2f68436a775031452e706e67"
+            style={{ width: '300px' }}
           />
           <h3>Twilio Twitter</h3>
           <p>
@@ -101,8 +101,18 @@ const Portfolio = () => (
           </PortfolioItemButtonContainer>
         </PortfolioItem>
         <PortfolioItem>
+          <PortfolioItemImg
+            alt="screenshot of PR"
+            src="http://res.cloudinary.com/dobfxs62e/image/upload/v1526865158/Habitica_Contribution.png"
+          />
           <h3>Habitica Contribution</h3>
-          <p>a super cool app</p>
+          <p>
+            I contributed to an open-source project called{' '}
+            <a alt="link to Habitica website" href="https://habitica.com/">
+              Habitica
+            </a>, which is a gamified task manager. I fixed an issue with a friend, submitted a pull request and it was
+            merged into the project.
+          </p>
           <PortfolioItemButtonContainer>
             <a href="https://medium.freecodecamp.org/i-made-my-first-open-source-contribution-within-200-days-and-how-you-can-too-4d5bdbd63fad">
               <Button>Read on Medium</Button>
