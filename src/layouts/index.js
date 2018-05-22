@@ -1,10 +1,10 @@
 /* eslint no-unused-expressions:0 */
 
-import React from 'react';
-import styled, { ThemeProvider, injectGlobal } from 'styled-components';
-import SEO from '../components/SEO';
-import theme from '../../config/Theme';
-import { media } from '../utils/media';
+import React from 'react'
+import styled, { ThemeProvider, injectGlobal } from 'styled-components'
+import SEO from '../components/SEO'
+import theme from '../../config/Theme'
+import { media } from '../utils/media'
 
 injectGlobal`
   ::selection {
@@ -55,27 +55,31 @@ injectGlobal`
       outline: none;
     }
   }
-`;
+`
 
 const Footer = styled.footer`
   text-align: center;
   padding: 3rem 0;
-`;
+`
 
 const TemplateWrapper = props => {
-  const { children } = props;
+  const { children } = props
+  const today = new Date()
+  const year = today.getFullYear()
   return (
     <ThemeProvider theme={theme}>
       <div>
         <SEO />
         {children()}
         <Footer>
-          &copy; 2018 by Joe Previte. All rights reserved. <br />
-          <a href="https://github.com/jjprevite/portfolio-rebuild">GitHub Repository</a>
+          &copy; {year} Made with 🎵 and ❤️ by Joe Previte <br />
+          <a href="https://github.com/jjprevite/portfolio-rebuild">
+            GitHub Repository
+          </a>
         </Footer>;
       </div>
     </ThemeProvider>
-  );
-};
+  )
+}
 
-export default TemplateWrapper;
+export default TemplateWrapper
