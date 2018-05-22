@@ -1,15 +1,15 @@
 /* eslint jsx-a11y/label-has-for:0 */
 
-import React from 'react';
-import Helmet from 'react-helmet';
-import Link from 'gatsby-link';
-import styled from 'styled-components';
-import Wrapper from '../components/Wrapper';
-import Header from '../components/Header';
-import Button from '../components/Button';
-import { media } from '../utils/media';
+import React from 'react'
+import Helmet from 'react-helmet'
+import Link from 'gatsby-link'
+import styled from 'styled-components'
+import Wrapper from '../components/Wrapper'
+import Header from '../components/Header'
+import Button from '../components/Button'
+import { media } from '../utils/media'
 
-import config from '../../config/SiteConfig';
+import config from '../../config/SiteConfig'
 
 const Content = styled.div`
   grid-column: 2;
@@ -41,18 +41,18 @@ const Content = styled.div`
       }
     }
   }
-`;
+`
 
 const PortfolioList = styled.ul`
   list-style: none;
   margin-left: 0;
-`;
+`
 
-const PortfolioItem = styled.li``;
+const PortfolioItem = styled.li``
 
 const PortfolioItemImg = styled.img`
   height: auto;
-`;
+`
 
 const PortfolioItemButtonContainer = styled.div`
   display: flex;
@@ -70,7 +70,7 @@ const PortfolioItemButtonContainer = styled.div`
       margin-bottom: 10px;
     }
   }
-`;
+`
 
 const Portfolio = () => (
   <Wrapper>
@@ -125,6 +125,6 @@ const Portfolio = () => (
       </PortfolioList>
     </Content>
   </Wrapper>
-);
+)
 
-export default Portfolio;
+export default Portfolio
