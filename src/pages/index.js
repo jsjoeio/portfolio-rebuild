@@ -121,7 +121,7 @@ export const IndexQuery = graphql`
           }
           frontmatter {
             title
-            date(formatString: "MM.DD.YYYY")
+            date(formatString: "MMMM DD, YYYY")
             category
           }
           excerpt(pruneLength: 200)
