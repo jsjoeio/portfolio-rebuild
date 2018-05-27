@@ -1,12 +1,12 @@
-import React from 'react';
-import Link from 'gatsby-link';
-import styled from 'styled-components';
-import Article from '../components/Article';
-import Wrapper from '../components/Wrapper';
-import Button from '../components/Button';
-import SectionTitle from '../components/SectionTitle';
+import React from 'react'
+import Link from 'gatsby-link'
+import styled from 'styled-components'
+import Article from '../components/Article'
+import Wrapper from '../components/Wrapper'
+import Button from '../components/Button'
+import SectionTitle from '../components/SectionTitle'
 
-import { media } from '../utils/media';
+import { media } from '../utils/media'
 
 const Content = styled.div`
   grid-column: 2;
@@ -20,7 +20,7 @@ const Content = styled.div`
     padding: 2rem 1.5rem;
   }
   overflow: hidden;
-`;
+`
 
 const Hero = styled.div`
   grid-column: 2;
@@ -38,19 +38,19 @@ const Hero = styled.div`
       font-size: 1.45rem;
     }
   }
-`;
+`
 
 const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
-`;
+`
 
 const Emoji = styled.span`
   margin-right: 0.5rem;
-`;
+`
 
 const IndexPage = props => {
-  const postEdges = props.data.allMarkdownRemark.edges;
+  const postEdges = props.data.allMarkdownRemark.edges
 
   return (
     <Wrapper>
@@ -105,10 +105,10 @@ const IndexPage = props => {
         ))}
       </Content>
     </Wrapper>
-  );
-};
+  )
+}
 
-export default IndexPage;
+export default IndexPage
 
 /* eslint no-undef: off */
 export const IndexQuery = graphql`
@@ -121,7 +121,7 @@ export const IndexQuery = graphql`
           }
           frontmatter {
             title
-            date(formatString: "DD.MM.YYYY")
+            date(formatString: "MM.DD.YYYY")
             category
           }
           excerpt(pruneLength: 200)
@@ -130,4 +130,4 @@ export const IndexQuery = graphql`
       }
     }
   }
-`;
+`

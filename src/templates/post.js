@@ -1,16 +1,16 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import Link from 'gatsby-link';
-import styled from 'styled-components';
-import kebabCase from 'lodash/kebabCase';
-import SEO from '../components/SEO';
-import Wrapper from '../components/Wrapper';
-import Header from '../components/Header';
-import Subline from '../components/Subline';
-import { media } from '../utils/media';
+import React from 'react'
+import Helmet from 'react-helmet'
+import Link from 'gatsby-link'
+import styled from 'styled-components'
+import kebabCase from 'lodash/kebabCase'
+import SEO from '../components/SEO'
+import Wrapper from '../components/Wrapper'
+import Header from '../components/Header'
+import Subline from '../components/Subline'
+import { media } from '../utils/media'
 
-import config from '../../config/SiteConfig';
-import '../utils/prismjs-theme.css';
+import config from '../../config/SiteConfig'
+import '../utils/prismjs-theme.css'
 
 const Content = styled.article`
   grid-column: 2;
@@ -26,20 +26,20 @@ const Content = styled.article`
   @media ${media.phone} {
     padding: 2rem 1.5rem;
   }
-`;
+`
 
 const Title = styled.h1`
   margin-bottom: 1rem;
-`;
+`
 
 const PostContent = styled.div`
   margin-top: 4rem;
-`;
+`
 
 const Post = props => {
-  const { slug } = props.pathContext;
-  const postNode = props.data.markdownRemark;
-  const post = postNode.frontmatter;
+  const { slug } = props.pathContext
+  const postNode = props.data.markdownRemark
+  const post = postNode.frontmatter
 
   return (
     <Wrapper>
@@ -57,10 +57,10 @@ const Post = props => {
         <PostContent dangerouslySetInnerHTML={{ __html: postNode.html }} />
       </Content>
     </Wrapper>
-  );
-};
+  )
+}
 
-export default Post;
+export default Post
 
 /* eslint no-undef: off */
 export const postQuery = graphql`
@@ -69,10 +69,10 @@ export const postQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "DD.MM.YYYY")
+        date(formatString: "MM.DD.YYYY")
         category
       }
       timeToRead
     }
   }
-`;
+`

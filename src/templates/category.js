@@ -1,15 +1,15 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import Link from 'gatsby-link';
-import styled from 'styled-components';
-import Wrapper from '../components/Wrapper';
-import Header from '../components/Header';
-import Subline from '../components/Subline';
-import Article from '../components/Article';
-import SectionTitle from '../components/SectionTitle';
-import { media } from '../utils/media';
+import React from 'react'
+import Helmet from 'react-helmet'
+import Link from 'gatsby-link'
+import styled from 'styled-components'
+import Wrapper from '../components/Wrapper'
+import Header from '../components/Header'
+import Subline from '../components/Subline'
+import Article from '../components/Article'
+import SectionTitle from '../components/SectionTitle'
+import { media } from '../utils/media'
 
-import config from '../../config/SiteConfig';
+import config from '../../config/SiteConfig'
 
 const Content = styled.div`
   grid-column: 2;
@@ -25,12 +25,12 @@ const Content = styled.div`
   @media ${media.phone} {
     padding: 2rem 1.5rem;
   }
-`;
+`
 
 const Category = props => {
-  const { category } = props.pathContext;
-  const { edges, totalCount } = props.data.allMarkdownRemark;
-  const subline = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged with "${category}"`;
+  const { category } = props.pathContext
+  const { edges, totalCount } = props.data.allMarkdownRemark
+  const subline = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged with "${category}"`
 
   return (
     <Wrapper>
@@ -56,10 +56,10 @@ const Category = props => {
         ))}
       </Content>
     </Wrapper>
-  );
-};
+  )
+}
 
-export default Category;
+export default Category
 
 /* eslint no-undef: off */
 export const postQuery = graphql`
@@ -73,7 +73,7 @@ export const postQuery = graphql`
         node {
           frontmatter {
             title
-            date(formatString: "DD.MM.YYYY")
+            date(formatString: "MM.DD.YYYY")
             category
           }
           fields {
@@ -85,4 +85,4 @@ export const postQuery = graphql`
       }
     }
   }
-`;
+`
