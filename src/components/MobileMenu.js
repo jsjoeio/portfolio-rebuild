@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'gatsby-link'
 import styled from 'styled-components'
 
 const MobileMenuContainer = styled.div`
@@ -30,6 +31,17 @@ const MobileMenuContainer = styled.div`
     }
   }
 `
+const List = styled.ul`
+  list-style: none;
+`
+const MenuItem = styled.li`
+  display: block;
+  margin-left: none;
+  font-size: 25px;
+`
+const Emoji = styled.span`
+  margin-right: 0.5rem;
+`
 
 // TODO: fix hover effect
 
@@ -43,18 +55,38 @@ const MobileMenu = props => {
       role="button"
       className={menuVisibility ? 'show' : 'hide'}
     >
-      <h2>
-        <a href="#">Home</a>
-      </h2>
-      <h2>
-        <a href="#">About</a>
-      </h2>
-      <h2>
-        <a href="#">Contact</a>
-      </h2>
-      <h2>
-        <a href="#">Search</a>
-      </h2>
+      <List>
+        <MenuItem>
+          <Link to="/portfolio">
+            <Emoji>💼</Emoji>
+            Portfolio
+          </Link>
+        </MenuItem>
+        <MenuItem>
+          <Link to="/bookshelf">
+            <Emoji>📚</Emoji>
+            Bookshelf
+          </Link>
+        </MenuItem>
+        <MenuItem>
+          <Link to="/meditation">
+            <Emoji>🧘‍♂️</Emoji>
+            Meditation
+          </Link>
+        </MenuItem>
+        <MenuItem>
+          <Link to="/beats">
+            <Emoji>🎧</Emoji>
+            Beats
+          </Link>
+        </MenuItem>
+        <MenuItem>
+          <Link to="/contact">
+            <Emoji>📨</Emoji>
+            Contact
+          </Link>
+        </MenuItem>
+      </List>
     </MobileMenuContainer>
   )
 }
