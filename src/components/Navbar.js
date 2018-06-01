@@ -82,7 +82,7 @@ class Navbar extends Component {
         <MediaQuery maxDeviceWidth={991}>
           <div>
             <MenuToggle handleMouseDown={this.handleMouseDown} />
-            <MobileMenu handleMouseDown={this.handleMouseDown} menuVisability={this.state.visible} />
+            <MobileMenu handleMouseDown={this.handleMouseDown} menuVisibility={this.state.visible} />
           </div>
         </MediaQuery>
       </nav>
