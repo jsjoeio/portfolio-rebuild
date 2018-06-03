@@ -33,11 +33,14 @@ const MobileMenuContainer = styled.div`
 `
 const List = styled.ul`
   list-style: none;
+  float: right;
+  margin-right: 30px;
+  margin-top: 15px;
 `
 const MenuItem = styled.li`
   display: block;
-  margin-left: none;
   font-size: 25px;
+  // margin-right: 35px;
 `
 const Emoji = styled.span`
   margin-right: 0.5rem;
