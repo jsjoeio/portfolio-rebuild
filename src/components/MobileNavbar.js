@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import MediaQuery from 'react-responsive'
-import styled from 'styled-components'
 import MenuToggle from './MenuToggle'
 import MobileMenu from './MobileMenu'
 
