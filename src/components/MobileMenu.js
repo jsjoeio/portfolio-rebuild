@@ -4,17 +4,17 @@ import styled from 'styled-components'
 
 const MobileMenuContainer = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 100vh
   background-color: #ffe600;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
   overflow: scroll;
   z-index: 10000;
 
   &.hide {
-    transform: translate3d(100vw, 0, 0);
+    transform: translate3d(110vw, 0, 0);
   }
 
   &.show {
