@@ -36,8 +36,6 @@ class Navbar extends Component {
 
   handleMouseDown(e) {
     this.toggleMenu()
-    console.log('clicked!')
-    console.log(`state is ${this.state.visible}`)
     e.stopPropagation()
   }
 
