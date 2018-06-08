@@ -59,6 +59,7 @@ const Contact = () => (
         data-netlify-honeypot="bot-field
       "
         netlify
+        action="/contact"
       >
         <p>
           <label htmlFor="name">Name</label>
