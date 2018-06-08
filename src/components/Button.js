@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { lighten } from 'polished';
+import React from 'react'
+import styled from 'styled-components'
+import { lighten } from 'polished'
 
 const Wrapper = styled.button`
   background: ${props => props.theme.primary};
@@ -27,8 +27,8 @@ const Wrapper = styled.button`
     margin-right: 0.75rem;
     fill: white;
   }
-`;
+`
 
-const Button = props => <Wrapper big={props.big}>{props.children}</Wrapper>;
+const Button = props => <Wrapper big={props.big}>{props.children}</Wrapper>
 
-export default Button;
+export default Button
