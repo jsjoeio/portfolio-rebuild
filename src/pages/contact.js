@@ -76,6 +76,7 @@ const Contact = () => (
         <p>
           <Button type="submit">Send</Button>
         </p>
+        <input type="hidden" name="form-name" value="contact-form" />
       </form>
     </Content>
   </Wrapper>
