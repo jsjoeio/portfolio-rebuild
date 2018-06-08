@@ -1,9 +1,8 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import styled from 'styled-components'
 import Article from '../components/Article'
 import Wrapper from '../components/Wrapper'
-import Button from '../components/Button'
+import Navbar from '../components/Navbar'
 import SectionTitle from '../components/SectionTitle'
 
 import { media } from '../utils/media'
@@ -40,15 +39,6 @@ const Hero = styled.div`
   }
 `
 
-const Nav = styled.nav`
-  display: flex;
-  justify-content: space-between;
-`
-
-const Emoji = styled.span`
-  margin-right: 0.5rem;
-`
-
 const IndexPage = props => {
   const postEdges = props.data.allMarkdownRemark.edges
 
@@ -57,38 +47,7 @@ const IndexPage = props => {
       <Hero>
         <h1>Hi.</h1>
         <p>I&apos;m Joe Previte, a Frontend Developer with a passion for learning.</p>
-        <Nav>
-          <Link to="/portfolio">
-            <Button big>
-              <Emoji>💼</Emoji>
-              Portfolio
-            </Button>
-          </Link>
-          <Link to="/bookshelf">
-            <Button big>
-              <Emoji>📚</Emoji>
-              Bookshelf
-            </Button>
-          </Link>
-          <Link to="/meditation">
-            <Button big>
-              <Emoji>🧘‍♂️</Emoji>
-              Meditation
-            </Button>
-          </Link>
-          <Link to="/beats">
-            <Button big>
-              <Emoji>🎧</Emoji>
-              Beats
-            </Button>
-          </Link>
-          <Link to="/contact">
-            <Button big>
-              <Emoji>📨</Emoji>
-              Contact
-            </Button>
-          </Link>
-        </Nav>
+        <Navbar />
       </Hero>
       <Content>
         <SectionTitle>Latest posts</SectionTitle>

@@ -1,10 +1,11 @@
 /* eslint no-unused-expressions:0 */
 
-import React from 'react';
-import styled, { ThemeProvider, injectGlobal } from 'styled-components';
-import SEO from '../components/SEO';
-import theme from '../../config/Theme';
-import { media } from '../utils/media';
+import React from 'react'
+import styled, { ThemeProvider, injectGlobal } from 'styled-components'
+import SEO from '../components/SEO'
+import MobileNavBar from '../components/MobileNavbar'
+import theme from '../../config/Theme'
+import { media } from '../utils/media'
 
 injectGlobal`
   ::selection {
@@ -55,20 +56,21 @@ injectGlobal`
       outline: none;
     }
   }
-`;
+`
 
 const Footer = styled.footer`
   text-align: center;
   padding: 3rem 0;
-`;
+`
 
 const TemplateWrapper = props => {
-  const { children } = props;
-  const today = new Date();
-  const year = today.getFullYear();
+  const { children } = props
+  const today = new Date()
+  const year = today.getFullYear()
   return (
     <ThemeProvider theme={theme}>
       <div>
+        <MobileNavBar />
         <SEO />
         {children()}
         <Footer>
@@ -77,7 +79,7 @@ const TemplateWrapper = props => {
         </Footer>;
       </div>
     </ThemeProvider>
-  );
-};
+  )
+}
 
-export default TemplateWrapper;
+export default TemplateWrapper
