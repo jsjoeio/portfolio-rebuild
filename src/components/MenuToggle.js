@@ -28,7 +28,6 @@ const Hamburger = styled.span`
   &:hover {
     background: ${props => lighten(0.05, props.theme.primary)};
     cursor: pointer;
-    transform: translateY(-2px);
   }
 
   &:before {
