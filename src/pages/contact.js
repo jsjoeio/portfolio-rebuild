@@ -1,15 +1,15 @@
 /* eslint jsx-a11y/label-has-for:0 */
 
-import React from 'react';
-import Helmet from 'react-helmet';
-import Link from 'gatsby-link';
-import styled from 'styled-components';
-import Wrapper from '../components/Wrapper';
-import Header from '../components/Header';
-import Button from '../components/Button';
-import { media } from '../utils/media';
+import React from 'react'
+import Helmet from 'react-helmet'
+import Link from 'gatsby-link'
+import styled from 'styled-components'
+import Wrapper from '../components/Wrapper'
+import Header from '../components/Header'
+import Button from '../components/Button'
+import { media } from '../utils/media'
 
-import config from '../../config/SiteConfig';
+import config from '../../config/SiteConfig'
 
 const Content = styled.div`
   grid-column: 2;
@@ -41,7 +41,7 @@ const Content = styled.div`
       }
     }
   }
-`;
+`
 
 const Contact = () => (
   <Wrapper>
@@ -54,10 +54,11 @@ const Contact = () => (
       <p>Want to get in touch? Fill out this form below and say hello 👋🏼</p>
       <form
         name="contact-form"
-        method="post"
+        method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field
       "
+        netlify
       >
         <p>
           <label htmlFor="name">Name</label>
@@ -72,11 +73,11 @@ const Contact = () => (
           <textarea name="message" required />
         </p>
         <p>
-          <Button>Send</Button>
+          <Button type="submit">Send</Button>
         </p>
       </form>
     </Content>
   </Wrapper>
-);
+)
 
-export default Contact;
+export default Contact
