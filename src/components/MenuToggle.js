@@ -4,14 +4,13 @@ import { lighten } from 'polished'
 
 const ScreenReaderSpan = styled.span`
   position: absolute;
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0;
-  border: 0;
   height: 1px;
   width: 1px;
-  overflow: hidden;
-  right: 30px;
-  top: 3px;
+  clip: rect(1px 1px 1px 1px); // IE 6 and 7
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  overflow: hidden !important;
 `
 
 const Hamburger = styled.span`
