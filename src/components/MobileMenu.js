@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const MobileMenuContainer = styled.div`
   width: 100vw;
   height: 100vh
-  background-color: #ffe600;
+  background-color: #4ADB7F;
   position: fixed;
   top: 0;
   right: 0;
