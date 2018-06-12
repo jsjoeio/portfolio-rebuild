@@ -63,6 +63,7 @@ const MenuToggle = props => (
     aria-expanded={props.isOpen}
     onMouseDown={props.handleMouseDown}
     aria-hidden="true"
+    alt="Menu Toggle"
   >
     <ScreenReaderSpan>Menu</ScreenReaderSpan>
     <Hamburger />
