@@ -23,11 +23,11 @@ class Navbar extends Component {
     e.stopPropagation()
   }
 
-  render() {
+  render(props) {
     return (
       <MediaQuery maxDeviceWidth={991}>
         <nav>
-          <MenuToggle handleMouseDown={this.handleMouseDown} isOpen={this.state.visible} />
+          <MenuToggle handleMouseDown={this.handleMouseDown} isOpen={this.state.visible} isHome={this.props.isHome} />
           <MobileMenu handleMouseDown={this.handleMouseDown} menuVisibility={this.state.visible} />
         </nav>
       </MediaQuery>

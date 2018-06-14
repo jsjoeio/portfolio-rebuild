@@ -6,6 +6,7 @@ import kebabCase from 'lodash/kebabCase'
 import SEO from '../components/SEO'
 import Wrapper from '../components/Wrapper'
 import Header from '../components/Header'
+import MobileNavbar from '../components/MobileNavbar'
 import Subline from '../components/Subline'
 import { media } from '../utils/media'
 
@@ -47,6 +48,7 @@ const Post = props => {
       <Helmet title={`${post.title} | ${config.siteTitle}`} />
       <Header>
         <Link to="/">{config.siteTitle}</Link>
+        <MobileNavbar isHome={false} />
       </Header>
       <Content>
         <Title>{post.title}</Title>

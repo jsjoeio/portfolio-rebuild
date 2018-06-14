@@ -17,7 +17,7 @@ const Hamburger = styled.span`
   border-radius: 10px;
   height: 5px;
   width: 35px;
-  background: ${props => props.theme.primary};
+  background: ${props => (props.isHome ? props.theme.primary : '#FFF')};
   position: absolute;
   display: block;
   content: '';
@@ -35,7 +35,7 @@ const Hamburger = styled.span`
     border-radius: 10px;
     height: 5px;
     width: 35px;
-    background: ${props => props.theme.primary};
+    background: ${props => (props.isHome ? props.theme.primary : '#FFF')};
     position: absolute;
     display: block;
     content: '';
@@ -47,7 +47,7 @@ const Hamburger = styled.span`
     border-radius: 10px;
     height: 5px;
     width: 35px;
-    background: ${props => props.theme.primary};
+    background: ${props => (props.isHome ? props.theme.primary : '#FFF')};
     position: absolute;
     display: block;
     content: '';
@@ -65,7 +65,7 @@ const MenuToggle = props => (
     alt="Menu Toggle"
   >
     <ScreenReaderSpan>Menu</ScreenReaderSpan>
-    <Hamburger />
+    <Hamburger isHome={props.isHome} />
   </button>
 )
 export default MenuToggle
