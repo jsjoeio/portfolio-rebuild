@@ -44,6 +44,12 @@ const Content = styled.div`
   }
 `
 
+const PageHeading = styled.h1`
+  @media ${media.phone} {
+    font-size: 3.8rem;
+  }
+`
+
 const Beats = () => (
   <Wrapper>
     <Helmet title={`Tasty Beats | ${config.siteTitle}`} />
@@ -52,7 +58,7 @@ const Beats = () => (
       <MobileNavbar isHome={false} />
     </Header>
     <Content>
-      <h1>🎧 Tasty Beats</h1>
+      <PageHeading>🎧 Tasty Beats</PageHeading>
       <h3>What exactly are "tasty beats"?</h3>
       <p>
         It's a playlist of my top 10 favorite EDM/House songs to which I'm currently vibing. These are the songs I play
