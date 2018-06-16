@@ -4,6 +4,7 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 import Wrapper from '../components/Wrapper'
 import Header from '../components/Header'
+import Menu from '../components/Menu'
 import MobileNavbar from '../components/MobileNavbar'
 import Subline from '../components/Subline'
 import Article from '../components/Article'
@@ -37,7 +38,7 @@ const Category = props => {
     <Wrapper>
       <Helmet title={`${category} | ${config.siteTitle}`} />
       <Header>
-        <Link to="/">{config.siteTitle}</Link>
+        <Menu />
         <MobileNavbar isHome={false} />
       </Header>
       <Content>

@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import kebabCase from 'lodash/kebabCase'
 import Wrapper from '../components/Wrapper'
 import Header from '../components/Header'
+import Menu from '../components/Menu'
 import MobileNavbar from '../components/MobileNavbar'
 import SectionTitle from '../components/SectionTitle'
 import { media } from '../utils/media'
@@ -40,7 +41,7 @@ const Category = props => {
     <Wrapper>
       <Helmet title={`Categories | ${config.siteTitle}`} />
       <Header>
-        <Link to="/">{config.siteTitle}</Link>
+        <Menu />
         <MobileNavbar isHome={false} />
       </Header>
       <Content>

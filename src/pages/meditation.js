@@ -6,6 +6,7 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 import Wrapper from '../components/Wrapper'
 import Header from '../components/Header'
+import Menu from '../components/Menu'
 import MobileNavbar from '../components/MobileNavbar'
 import { media } from '../utils/media'
 
@@ -51,7 +52,7 @@ const Meditation = () => (
   <Wrapper>
     <Helmet title={`Meditation | ${config.siteTitle}`} />
     <Header>
-      <Link to="/">{config.siteTitle}</Link>
+      <Menu />
       <MobileNavbar isHome={false} />
     </Header>
     <Content>

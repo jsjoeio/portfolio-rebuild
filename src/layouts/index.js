@@ -75,7 +75,6 @@ const TemplateWrapper = props => {
         {children()}
         <Footer>
           &copy; {year} Made with 🎵 and ❤️ by Joe Previte <br />
-          <a href="https://github.com/jjprevite/portfolio-rebuild">GitHub Repository</a>
         </Footer>
       </div>
     </ThemeProvider>
