@@ -44,6 +44,12 @@ const Content = styled.div`
   }
 `
 
+const PageHeading = styled.h1`
+  @media ${media.phone} {
+    font-size: 2.9rem;
+  }
+`
+
 const BookList = styled.ul`
   list-style: none;
   margin-left: 0;
@@ -65,7 +71,7 @@ const Bookshelf = () => (
       <MobileNavbar isHome={false} />
     </Header>
     <Content>
-      <h1>📚 Bookshelf</h1>
+      <PageHeading>📚 Bookshelf</PageHeading>
       <p>
         The purpose of this page is to share the books on my 'virtual bookshelf'. Here's a short list of books that have
         changed my life or inspired me in some way:
