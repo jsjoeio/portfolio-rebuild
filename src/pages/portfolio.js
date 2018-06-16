@@ -6,6 +6,7 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 import Wrapper from '../components/Wrapper'
 import Header from '../components/Header'
+import MobileNavbar from '../components/MobileNavbar'
 import Button from '../components/Button'
 import { media } from '../utils/media'
 
