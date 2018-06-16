@@ -46,8 +46,6 @@ const Emoji = styled.span`
   margin-right: 0.5rem;
 `
 
-// TODO: fix hover effect
-
 const MobileMenu = props => {
   const { menuVisibility } = props
   return (
