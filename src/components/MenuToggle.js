@@ -13,11 +13,6 @@ const Hamburger = styled.span`
   right: 30px;
   top: 38px;
 
-  &:hover {
-    background: ${props => lighten(0.05, props.theme.primary)};
-    cursor: pointer;
-  }
-
   &:before {
     top: -10px;
     cursor: pointer;
