@@ -1,14 +1,15 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import Link from 'gatsby-link';
-import styled from 'styled-components';
-import kebabCase from 'lodash/kebabCase';
-import Wrapper from '../components/Wrapper';
-import Header from '../components/Header';
-import SectionTitle from '../components/SectionTitle';
-import { media } from '../utils/media';
+import React from 'react'
+import Helmet from 'react-helmet'
+import Link from 'gatsby-link'
+import styled from 'styled-components'
+import kebabCase from 'lodash/kebabCase'
+import Wrapper from '../components/Wrapper'
+import Header from '../components/Header'
+import MobileNavbar from '../components/MobileNavbar'
+import SectionTitle from '../components/SectionTitle'
+import { media } from '../utils/media'
 
-import config from '../../config/SiteConfig';
+import config from '../../config/SiteConfig'
 
 const Content = styled.div`
   grid-column: 2;
@@ -24,22 +25,23 @@ const Content = styled.div`
   @media ${media.phone} {
     padding: 2rem 1.5rem;
   }
-`;
+`
 
 const Title = styled.h3`
   position: relative;
   text-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
   margin-bottom: 0.75rem;
-`;
+`
 
 const Category = props => {
-  const { group } = props.data.allMarkdownRemark;
+  const { group } = props.data.allMarkdownRemark
 
   return (
     <Wrapper>
       <Helmet title={`Categories | ${config.siteTitle}`} />
       <Header>
         <Link to="/">{config.siteTitle}</Link>
+        <MobileNavbar isHome={false} />
       </Header>
       <Content>
         <SectionTitle>Categories</SectionTitle>
@@ -52,10 +54,10 @@ const Category = props => {
         ))}
       </Content>
     </Wrapper>
-  );
-};
+  )
+}
 
-export default Category;
+export default Category
 
 /* eslint no-undef: off */
 export const postQuery = graphql`
@@ -67,4 +69,4 @@ export const postQuery = graphql`
       }
     }
   }
-`;
+`

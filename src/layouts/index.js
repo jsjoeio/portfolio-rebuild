@@ -70,7 +70,7 @@ const TemplateWrapper = props => {
   return (
     <ThemeProvider theme={theme}>
       <div>
-        {props.location.pathname === '/' && <MobileNavBar />}
+        {props.location.pathname === '/' && <MobileNavBar isHome />}
         <SEO />
         {children()}
         <Footer>

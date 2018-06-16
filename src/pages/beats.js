@@ -1,15 +1,15 @@
 /* eslint jsx-a11y/label-has-for:0 */
 
-import React from 'react';
-import Helmet from 'react-helmet';
-import Link from 'gatsby-link';
-import styled from 'styled-components';
-import Wrapper from '../components/Wrapper';
-import Header from '../components/Header';
-import Button from '../components/Button';
-import { media } from '../utils/media';
+import React from 'react'
+import Helmet from 'react-helmet'
+import Link from 'gatsby-link'
+import styled from 'styled-components'
+import Wrapper from '../components/Wrapper'
+import Header from '../components/Header'
+import MobileNavbar from '../components/MobileNavbar'
+import { media } from '../utils/media'
 
-import config from '../../config/SiteConfig';
+import config from '../../config/SiteConfig'
 
 const Content = styled.div`
   grid-column: 2;
@@ -41,13 +41,14 @@ const Content = styled.div`
       }
     }
   }
-`;
+`
 
 const Beats = () => (
   <Wrapper>
     <Helmet title={`Tasty Beats | ${config.siteTitle}`} />
     <Header>
       <Link to="/">{config.siteTitle}</Link>
+      <MobileNavbar isHome={false} />
     </Header>
     <Content>
       <h1>🎧 Tasty Beats</h1>
@@ -83,6 +84,6 @@ const Beats = () => (
       </p>
     </Content>
   </Wrapper>
-);
+)
 
-export default Beats;
+export default Beats

@@ -1,15 +1,15 @@
 /* eslint jsx-a11y/label-has-for:0 */
 
-import React from 'react';
-import Helmet from 'react-helmet';
-import Link from 'gatsby-link';
-import styled from 'styled-components';
-import Wrapper from '../components/Wrapper';
-import Header from '../components/Header';
-import Button from '../components/Button';
-import { media } from '../utils/media';
+import React from 'react'
+import Helmet from 'react-helmet'
+import Link from 'gatsby-link'
+import styled from 'styled-components'
+import Wrapper from '../components/Wrapper'
+import Header from '../components/Header'
+import MobileNavbar from '../components/MobileNavbar'
+import { media } from '../utils/media'
 
-import config from '../../config/SiteConfig';
+import config from '../../config/SiteConfig'
 
 const Content = styled.div`
   grid-column: 2;
@@ -41,26 +41,27 @@ const Content = styled.div`
       }
     }
   }
-`;
+`
 
 const BookList = styled.ul`
   list-style: none;
   margin-left: 0;
-`;
+`
 const BookTitle = styled.h3`
   margin-bottom: 0.25rem;
-`;
+`
 
 const BookAuthor = styled.p`
   margin-top: 0;
   font-style: italic;
-`;
+`
 
 const Bookshelf = () => (
   <Wrapper>
     <Helmet title={`Bookshelf | ${config.siteTitle}`} />
     <Header>
       <Link to="/">{config.siteTitle}</Link>
+      <MobileNavbar isHome={false} />
     </Header>
     <Content>
       <h1>📚 Bookshelf</h1>
@@ -132,6 +133,6 @@ const Bookshelf = () => (
       </p>
     </Content>
   </Wrapper>
-);
+)
 
-export default Bookshelf;
+export default Bookshelf

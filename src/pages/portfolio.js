@@ -77,6 +77,7 @@ const Portfolio = () => (
     <Helmet title={`Portfolio | ${config.siteTitle}`} />
     <Header>
       <Link to="/">{config.siteTitle}</Link>
+      <MobileNavbar isHome={false} />
     </Header>
     <Content>
       <h1>💼 Portfolio</h1>
