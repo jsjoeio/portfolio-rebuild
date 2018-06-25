@@ -47,6 +47,7 @@ const MenuToggle = props => (
     onMouseDown={props.handleMouseDown}
     aria-hidden="true"
     alt="Menu Toggle"
+    style={{ border: 'none', padding: '0' }}
   >
     <Hamburger isHome={props.isHome} />
   </button>
