@@ -1,5 +1,5 @@
 ---
-date: "2018-11-30"
+date: "2017-11-30"
 title: "Meditation will make you a better programmer. Here's how."
 category: "Coding"
 ---
