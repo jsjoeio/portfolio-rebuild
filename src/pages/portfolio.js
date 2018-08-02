@@ -105,7 +105,7 @@ const Portfolio = () => (
         <PortfolioItem>
           <PortfolioItemImg
             alt="screenshot of PR"
-            src="http://res.cloudinary.com/dobfxs62e/image/upload/v1526865158/Habitica_Contribution.png"
+            src="https://res.cloudinary.com/dobfxs62e/image/upload/v1526865158/Habitica_Contribution.png"
           />
           <h3>Habitica Contribution</h3>
           <p>
