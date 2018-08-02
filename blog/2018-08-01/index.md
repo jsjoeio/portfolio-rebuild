@@ -16,4 +16,4 @@ Here's how to create a subdomain for your Gatsby website that's hosted by Netlif
 6.  Scroll down to Branch Subdomains and then select the branch you want to deploy as a subdomain.
 7.  Click "Create subdomain" and boom! 💣
 
-_NOTE_ Keep in mind the branch name will be used as the subdomain name.
+_Keep in mind the branch name will be used as the subdomain name._
