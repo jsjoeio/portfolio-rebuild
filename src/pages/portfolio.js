@@ -86,6 +86,29 @@ const Portfolio = () => (
       <PortfolioList>
         <PortfolioItem>
           <PortfolioItemImg
+            alt="screenshot of extension"
+            src="https://res.cloudinary.com/dobfxs62e/image/upload/v1535681465/timezoner-extension-screenshot.png"
+            style={{ width: '300px' }}
+          />
+          <h3>Timezoner - Chrome Extension</h3>
+          <p>
+            A simple Chrome extension to help you coordinate across timezones. Input the date and time of your event and
+            then we give you a link where others can view the event in their respective timezone. BOOM! Timezoning made
+            easy 👏🏼
+          </p>
+          <PortfolioItemButtonContainer>
+            <a href="https://github.com/jsjoeio/timezoner-extension">
+              <Button>GitHub Repo</Button>
+            </a>
+          </PortfolioItemButtonContainer>
+          <PortfolioItemButtonContainer>
+            <a href="https://chrome.google.com/webstore/detail/timezoner/kfnfgcafkeoflpapeniggnnkcaijgbgk">
+              <Button>Chrome Web Store</Button>
+            </a>
+          </PortfolioItemButtonContainer>
+        </PortfolioItem>
+        <PortfolioItem>
+          <PortfolioItemImg
             alt="screenshot of text message"
             src="https://camo.githubusercontent.com/7f50ef8e82ba4f7d754e6f765f198c17aa2ded30/68747470733a2f2f692e696d6775722e636f6d2f68436a775031452e706e67"
             style={{ width: '300px' }}
@@ -97,7 +120,7 @@ const Portfolio = () => (
             coding 🕺🏻💃
           </p>
           <PortfolioItemButtonContainer>
-            <a href="https://github.com/jjprevite/100-days-twilio-twitter">
+            <a href="https://github.com/jsjoeio/100-days-twilio-twitter">
               <Button>GitHub Repo</Button>
             </a>
           </PortfolioItemButtonContainer>
