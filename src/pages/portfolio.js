@@ -100,8 +100,6 @@ const Portfolio = () => (
             <a href="https://github.com/jsjoeio/timezoner-extension">
               <Button>GitHub Repo</Button>
             </a>
-          </PortfolioItemButtonContainer>
-          <PortfolioItemButtonContainer>
             <a href="https://chrome.google.com/webstore/detail/timezoner/kfnfgcafkeoflpapeniggnnkcaijgbgk">
               <Button>Chrome Web Store</Button>
             </a>
