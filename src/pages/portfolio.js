@@ -97,7 +97,7 @@ const Portfolio = () => (
             coding 🕺🏻💃
           </p>
           <PortfolioItemButtonContainer>
-            <a href="https://github.com/jjprevite/100-days-twilio-twitter">
+            <a href="https://github.com/jsjoeio/100-days-twilio-twitter">
               <Button>GitHub Repo</Button>
             </a>
           </PortfolioItemButtonContainer>

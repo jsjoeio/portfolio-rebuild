@@ -84,7 +84,7 @@ const Beats = () => (
       <h3>I know a few songs you might like! Can I share them with you?</h3>
       <p>
         I would love that! 😄 Shoot me a{' '}
-        <a href="https://twitter.com/jjprevite" rel="noopener noreferrer" target="_blank">
+        <a href="https://twitter.com/jsjoeio" rel="noopener noreferrer" target="_blank">
           DM on Twitter
         </a>{' '}
         with a link to the song. 🙏

@@ -10,7 +10,7 @@ module.exports = {
   siteDescription: 'a Scottsdale-based frontend developer, mindfulness teacher and learner',
 
   siteFBAppID: '123456789', // Facebook App ID
-  userTwitter: 'jjprevite', // Twitter Username
+  userTwitter: 'jsjoeio', // Twitter Username
   ogSiteName: 'joeprevite', // Facebook Site Name
 
   // Manifest and Progress color

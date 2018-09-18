@@ -79,7 +79,7 @@ const Meditation = () => (
       </p>
       <h3>Interested in joining a learning circle?</h3>
       <p>
-        ➡️ Reach out to me on <a href="https://twitter.com/jjprevite">Twitter</a> or{' '}
+        ➡️ Reach out to me on <a href="https://twitter.com/jsjoeio">Twitter</a> or{' '}
         <Link to="/contact">send me an email</Link>
       </p>
     </Content>
